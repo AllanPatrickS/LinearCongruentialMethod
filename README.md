@@ -1,5 +1,5 @@
-# Numero-Pseudo-Aleatorio
-Generation of pseudo-random numbers using the Linear congruential method
+# Linear congruential method
+Generation of pseudo-random numbers using the Linear congruential method.
 
 # How to run 
 + You must have python 2.5+ installed
