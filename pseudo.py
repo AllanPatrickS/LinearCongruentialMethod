@@ -26,13 +26,13 @@ def mcl(a, c, m, x0, n):
 
 def handle(rand, cl):
 
-    rand = map(trunc, rand)
-    cl = map(trunc, cl)
+    rand = list(map(trunc, rand))
+    cl = list(map(trunc, cl))
 
     print('\nMétodo random\n')
-    print(list(rand))
+    print(rand)
     print('\nMétodo congruente linear\n')
-    print(list(cl))
+    print(cl)
 
 
 def trunc(n):

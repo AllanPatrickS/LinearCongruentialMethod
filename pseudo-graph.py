@@ -26,21 +26,22 @@ def mcl(a, c, m, x0, n):
 
 def handle(rand, cl):
 
-    rand = map(trunc, rand)
-    cl = map(trunc, cl)
+    rand = list(map(trunc, rand))
+    cl = list(map(trunc, cl))
 
     print('\nMétodo random\n')
-    print(list(rand))
+    print(rand)
     print('\nMétodo congruente linear\n')
-    print(list(cl))
-    plt.bar([0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9], rand)
+    print(cl)
+    bins = [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+    plt.hist(rand, bins, histtype='bar', width=0.8)
     plt.legend()
     plt.xlabel('Intervalos')
     plt.ylabel('Frequência')
     plt.title('Randeom')
     plt.show()
 
-    plt.bar([0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9], cl)
+    plt.hist(cl, bins, histtype='bar', width=0.8)
     plt.legend()
     plt.xlabel('Intervalos')
     plt.ylabel('Frequência')
