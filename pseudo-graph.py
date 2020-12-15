@@ -35,14 +35,12 @@ def handle(rand, cl, n):
     print(cl)
     bins = [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
     plt.hist(rand, bins, histtype='bar', rwidth=0.4)
-    plt.legend()
     plt.xlabel('Intervalos')
     plt.ylabel('Frequência')
     plt.title('Random {}'.format(n))
     plt.show()
 
     plt.hist(cl, bins, histtype='bar', rwidth=0.4)
-    plt.legend()
     plt.xlabel('Intervalos')
     plt.ylabel('Frequência')
     plt.title('Congruente Linear {}'.format(n))
